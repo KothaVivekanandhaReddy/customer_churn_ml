@@ -1,0 +1,38 @@
+# Data processing
+pandas==2.2.0
+numpy==1.26.4
+scikit-learn==1.4.2
+
+# Machine Learning Models
+xgboost==2.1.1
+lightgbm==4.6.0
+
+# Model Evaluation & Visualization
+matplotlib==3.9.0
+seaborn==0.13.2
+scikit-plot==0.3.7
+
+# Explainability
+shap==0.45.0
+
+# API & Web Services
+fastapi==0.109.0
+uvicorn==0.27.0
+pydantic==2.6.4
+
+# Dashboard
+streamlit==1.41.0
+
+# Database & Persistence
+sqlalchemy==2.0.27
+psycopg2-binary==2.9.10
+
+# Utilities
+python-dotenv==1.0.1
+joblib==1.4.2
+tqdm==4.67.0
+
+# Jupyter
+jupyter==1.0.0
+notebook==7.2.0
+ipykernel==6.29.4

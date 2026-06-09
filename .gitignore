@@ -1,0 +1,109 @@
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Model Files (keep structure but ignore large files)
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pt
+models/*.pth
+models/*.onnx
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Data
+data/*.csv
+data/*.parquet
+!data/.gitkeep
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Cache
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+Thumbs.db
+.DS_Store
+*.orig
+
+# Temporary
+tmp/
+temp/
+*.tmp
+
+# AWS
+.aws/
+aws_credentials
+
+# Production Builds
+dist/
+build/
+*.egg-info/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# FastAPI
+.fastapi_cache/
+
+# Optional: Keep models directory structure
+!models/.gitkeep
+!data/.gitkeep
