@@ -19,6 +19,25 @@ Customer churn is a critical business problem because retaining existing custome
 
 ## Project Workflow
 
+## Architecture
+
+```mermaid
+flowchart TD
+
+A[Customer Churn Dataset]
+--> B[Preprocessing Pipeline]
+
+B --> C[Random Forest Model]
+
+C --> D[SHAP Explainability]
+
+D --> E[FastAPI API]
+
+E --> F[Docker Container]
+
+F --> G[Swagger UI]
+```
+
 ### Data Preparation
 
 * Data cleaning and preprocessing
