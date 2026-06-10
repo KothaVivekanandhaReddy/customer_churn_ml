@@ -70,8 +70,6 @@ AWS S3 (model artifact storage)
 
 GitHub → Render → FastAPI → AWS S3
 
-```
-```
 
 
 ### Data Preparation
