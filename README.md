@@ -15,6 +15,8 @@ Customer churn is a critical business problem because retaining existing custome
 * XGBoost
 * SHAP
 * FastAPI
+* Render
+* AWS S3
 * Docker
 
 ## Project Workflow
@@ -24,19 +26,53 @@ Customer churn is a critical business problem because retaining existing custome
 ```mermaid
 flowchart TD
 
-A[Customer Churn Dataset]
---> B[Preprocessing Pipeline]
+A[User Request]
+--> B[FastAPI API<br>Render Deployment]
 
 B --> C[Random Forest Model]
 
-C --> D[SHAP Explainability]
+C --> D[AWS S3 Model Storage]
 
-D --> E[FastAPI API]
+B --> E[Prediction Response]
 
-E --> F[Docker Container]
-
-F --> G[Swagger UI]
+B --> F[Swagger API Docs]
 ```
+
+### Deployment Architecture
+
+```text
+User
+  ↓
+Render (FastAPI)
+  ↓
+Downloads Model from AWS S3
+  ↓
+Random Forest Inference
+  ↓
+Prediction Response
+```
+
+### Live Deployment
+
+**Live API**
+
+https://customer-churn-ml-qae4.onrender.com
+
+**Swagger Documentation**
+
+https://customer-churn-ml-qae4.onrender.com/docs
+
+**Model Storage**
+
+AWS S3 (model artifact storage)
+
+**Deployment Stack**
+
+GitHub → Render → FastAPI → AWS S3
+
+```
+```
+
 
 ### Data Preparation
 
