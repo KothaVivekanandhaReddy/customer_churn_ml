@@ -1,42 +1,14 @@
-# Data processing
 pandas
 numpy
 scikit-learn
 
-# Machine Learning Models
-xgboost
-lightgbm
-
-# Model Evaluation & Visualization
-matplotlib
-seaborn
-scikit-plot
-
-# Explainability
-shap
-
-# API & Web Services
 fastapi
 uvicorn
 pydantic
 
-# Dashboard
 streamlit
 
-# Database & Persistence
-sqlalchemy
-psycopg2-binary
-
-# Utilities
-python-dotenv
 joblib
-tqdm
-
-# Jupyter
-jupyter
-notebook
-ipykernel
-
+python-dotenv
 boto3
-
 requests

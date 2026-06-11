@@ -106,12 +106,13 @@ The final model is exposed through a FastAPI application and containerized using
 
 ## Results
 
-| Model               | ROC-AUC |
-| ------------------- | ------- |
-| Logistic Regression | ~0.62   |
-| Random Forest       | ~0.67   |
-| XGBoost             | ~0.68   |
-| Top-10 Feature RF   | ~0.66   |
+| Model               | Threshold | Precision | Recall   | F1 Score  | ROC-AUC   |
+| ------------------- | --------- | --------- | -------- | --------- | --------- |
+| Logistic Regression | 0.50      | 0.14      | 0.55     | 0.22      | 0.622     |
+| Random Forest       | 0.50      | 0.16      | 0.58     | 0.25      | 0.677     |
+| XGBoost             | 0.15      | 0.21      | 0.36     | 0.267     | 0.685     |
+| XGBoost             | 0.10      | 0.16      | 0.63     | 0.255     | 0.685     |
+| Top-10 Feature RF   | 0.50      | 0.16      | 0.57     | 0.24      | ~0.66     |
 
 ## API Example
 

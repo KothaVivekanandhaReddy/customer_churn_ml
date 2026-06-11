@@ -1,0 +1,24 @@
+# Training & Experimentation
+
+xgboost
+lightgbm
+
+# Visualization
+matplotlib
+seaborn
+scikit-plot
+
+# Explainability
+shap
+
+# Database
+sqlalchemy
+psycopg2-binary
+
+# Utilities
+tqdm
+
+# Notebooks
+jupyter
+notebook
+ipykernel
